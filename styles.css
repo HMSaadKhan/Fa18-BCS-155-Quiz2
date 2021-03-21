@@ -1,3 +1,10 @@
 .error {
   border: red 1px solid;
 }
+
+.error_msg {
+    color: red;
+    float: right;
+    padding: auto;
+  }
+  
