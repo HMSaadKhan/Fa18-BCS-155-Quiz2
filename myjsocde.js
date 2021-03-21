@@ -19,8 +19,9 @@ function nameCheck() {
   if ($("#name").val().length < 5) {
     $("#name").addClass("error");
     $("#error_name").html("Name must be 5 character long");
-  } else {$("#name").removeClass("error");
-  $("#error_name").html(" ");
+  } else {
+    $("#name").removeClass("error");
+    $("#error_name").html(" ");
   }
   return;
 }
@@ -29,7 +30,6 @@ function emailCheck() {
   if (!$("#email").val().includes("@") || !$("#email").val().includes(".")) {
     $("#email").addClass("error");
     $("#error_email").html("Enter email in correct format");
-
   } else {
     $("#email").removeClass("error");
     $("#error_email").html(" ");
@@ -49,9 +49,7 @@ function passwordCheck() {
 }
 
 function confirmPasswordCheck() {
-  if (
-    $("#confirm_password").val() != $("#password").val()
-  ) {
+  if ($("#confirm_password").val() != $("#password").val()) {
     $("#confirm_password").addClass("error");
     $("#error_cpassword").html("Password must be same as above");
   } else {
